@@ -816,6 +816,138 @@ kbd {
   border-top: 1px solid var(--border);
 }
 
+.verify-section {
+  max-width: 900px;
+}
+
+.verify-intro {
+  margin-bottom: 28px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid var(--border);
+}
+
+.verify-intro h1 {
+  margin-bottom: 9px;
+}
+
+.verify-intro > p {
+  max-width: 620px;
+  margin-bottom: 17px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.verify-join-button {
+  display: inline-flex;
+  min-height: 38px;
+  align-items: center;
+  gap: 10px;
+  padding: 0 13px;
+  border: 1px solid #7040a0;
+  border-radius: 5px;
+  background: #653399;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  transition: background 160ms ease;
+}
+
+.verify-join-button:hover {
+  background: #7540ad;
+}
+
+.verify-join-button span {
+  color: #e0c8ff;
+}
+
+.verify-steps {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.verify-step {
+  min-width: 0;
+  padding: 17px;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  background: var(--surface);
+}
+
+.verify-step-copy {
+  display: grid;
+  grid-template-columns: 32px minmax(0, 1fr);
+  align-items: start;
+  gap: 12px;
+}
+
+.verify-step-number {
+  display: grid;
+  width: 29px;
+  height: 29px;
+  place-items: center;
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  border-radius: 50%;
+  background: rgba(126, 34, 206, 0.12);
+  color: #dfc3ff;
+  font-family: var(--mono);
+  font-size: 10px;
+}
+
+.verify-step h2 {
+  margin: 2px 0 5px;
+  color: #eeeaf3;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.verify-step-copy p,
+.verify-note {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.75;
+}
+
+.verify-step figure {
+  max-width: 680px;
+  margin: 16px 0 0 44px;
+}
+
+.verify-step figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: #0c0b10;
+}
+
+.verify-step figcaption {
+  margin-top: 6px;
+  color: var(--subtle);
+  font-size: 10px;
+}
+
+.verify-note {
+  margin: 13px 0 0 44px;
+  padding: 11px 13px;
+  border-left: 2px solid var(--purple);
+  background: rgba(168, 85, 247, 0.07);
+}
+
+.verify-complete {
+  margin: 22px 0 0;
+  padding: 15px 17px;
+  border: 1px solid rgba(168, 85, 247, 0.27);
+  border-radius: 6px;
+  background: rgba(126, 34, 206, 0.1);
+  color: #e5d5f7;
+  font-size: 13px;
+}
+
 @media (max-width: 760px) {
   .site-header {
     height: 102px;
@@ -843,6 +975,18 @@ kbd {
 
   .about-mark {
     width: 100px;
+  }
+
+  .verify-step {
+    padding: 14px;
+  }
+
+  .verify-step figure {
+    margin-left: 0;
+  }
+
+  .verify-note {
+    margin-left: 0;
   }
 }
 
